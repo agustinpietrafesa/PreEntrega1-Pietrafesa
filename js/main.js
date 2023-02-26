@@ -2,7 +2,7 @@ alert("Bienvenido a In Shape, te ayudaremos a lograr tus objetivos, comencemos!!
 
 let nombre = prompt("Ingresa tu nombre")
 let apellido = prompt("Ingresa tu apellido")
-let usuario = nombre + "  " + apellido 
+let persona = nombre + "  " + apellido 
 
 
 alert(nombre + " es un placer tenerte con nosotros, completa los siguientes datos para continuar:")
@@ -85,7 +85,7 @@ if (sexo == 1){
 
  alert("Recuerda, los resultados son calulados con operaciones matemáticas, mediante aproximaciones, no reflajan tu salud ni te definen!")
 
-resultados.innerHTML = `<h2>${usuario}</h2>
+resultados.innerHTML = `<h2>${persona}</h2>
                         <h4>Edad: ${edad}</h4>
                         <h4>Sexo: ${genero}</h4>
                         <h4>Peso: ${peso} Kg</h4>
@@ -95,3 +95,14 @@ resultados.innerHTML = `<h2>${usuario}</h2>
                         <h4>Peso de la masa ósea y orgánica: ${masaOsea} Kg</h4>
                         <h4>Peso de la masa muscular: ${masaMusc} Kg</h4>`;
 
+
+const usuario1 = {
+   nombre: 
+   genero: 
+   edad: 
+   peso:
+   altura:
+}
+
+
+usuario1.nombre = nombre
