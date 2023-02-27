@@ -44,23 +44,39 @@ if(imc <= 18.5){
     alert("Según el IMC, tu indice se encuentra dentro de la franja de obesidad.")
 }
 
-let grasa
+let grasa 
 let masaOsea
 let masaMusc
 
+function grasaMujer() {
+   return (1.2 * imc) + (0.23 * edad) - 5.4
+}
+function grasaHombre() {
+   return (1.2 * imc) + (0.23 * edad) - 10.8 - 5.4
+}
+function masaOseaMujer() {
+   return peso * 0.14
+}
+function masaOseaHombre() {
+   return peso * 0.15
+}
+function masaMuscular() {
+   return peso - (peso * (grasa / 100)) - masaOsea
+}
+
 if (sexo == 1){
-   grasa = (1.2 * imc) + (0.23 * edad) - 5.4
+   grasa = grasaMujer()
    alert("Tu porcentaje de grasa es " + grasa + "%")
-   masaOsea = peso * 0.14
+   masaOsea = masaOseaMujer()
    alert("Tu masa ósea y organica es de " + masaOsea + " Kg")
-   masaMusc = peso - (peso * (grasa / 100)) - masaOsea
+   masaMusc = masaMuscular()
    alert("Tu masa muscular es de " + masaMusc + " Kg")
 }else if (sexo == 2){
-   grasa = (1.2 * imc) + (0.23 * edad) - 10.8 - 5.4
+   grasa = grasaHombre()
    alert("Tu porcentaje de grasa es " + grasa + "%")
-   masaOsea = peso * 0.15
+   masaOsea = masaOseaHombre()
    alert("Tu masa ósea y organica es de " + masaOsea + " Kg")
-   masaMusc = peso - (peso * (grasa / 100)) - masaOsea
+   masaMusc = masaMuscular()
    alert("Tu masa muscular es de " + masaMusc + " Kg")   
 }else{
    alert("Ingrese un dato valido")
