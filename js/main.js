@@ -66,16 +66,6 @@ if (sexo == 1){
    alert("Ingrese un dato valido")
 }
 
-
-// function grasaMujer(){
-//    return ((1.2 * imc) + (0.23 * edad) - 5.4)
-// }
-
-// function grasaHombre(){
-//    return ((1.2 * imc) + (0.23 * edad) - 10.8 - 5.4)
-// }
-
-
 alert("Recuerda, los resultados son calulados con operaciones matemáticas, mediante aproximaciones, no reflajan tu salud ni te definen!")
 
 const usuario1 = {
